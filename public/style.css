@@ -1,0 +1,245 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  font-weight: lighter;
+  background-color: #080808;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #57cc57;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+nav ul li a.active {
+  background-color: #080808; /* Set the color you want for the active page */
+  padding: 10px; /* Add padding to create space inside the box */
+  border-radius: 4px; /* Add border radius for rounded corners */
+  color: #fff; /* Set the text color */
+  border: 1px solid #0a0a0a; /* Add a border with the desired color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a box shadow for depth */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 8px 16px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #4e854e;
+}
+ 
+
+ 
+main {
+  padding: 20px;
+}
+
+h1 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.cover-image {
+  position: relative;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.cover-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.5) to control darkness */
+}
+
+.cover-image img {
+  width: 100%;
+  height: auto;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.overlay-text h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+.overlay-text h3 {
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+  padding-right: 10px;
+  text-align: right;
+}
+
+
+#product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 250px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product img {
+  max-width: 100%;
+  max-height: 120px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.product {
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.product h2 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.product h3 {
+  font-size: 16px;
+  margin: 0;
+  color: #333;
+}
+.product-details p {
+  color: #666;
+  margin-top: 8px;
+}
+
+.product button {
+  background-color: #449c44;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.cart-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  width: 250px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item img {
+  max-width: 100%;
+  max-height: 120px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.cart-item {
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.cart-item h2 {
+  font-size: 16px;
+  margin: 0;
+  color: #333;
+}
+
+.cart-item p {
+  color: #666;
+  margin-top: 8px;
+}
+
+.checkout-section button {
+  background-color: #449c44;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.product button:hover {
+  background-color: #568556;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+}

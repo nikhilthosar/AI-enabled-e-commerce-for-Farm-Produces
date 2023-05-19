@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart - farm Mart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="/products.html">Products</a></li>
+        <li><a href="/cart.html">Cart</a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Your Cart</h1>
+    <div id="cart-items">
+      <!-- Cart items dynamically generated using JavaScript -->
+      <div class="cart-item">
+        <img src="assets/tomato.jpg" alt="Tomatoes">
+        <h2>Tomatoes</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Price: $5.99</p>
+      </div>
+      <div class="cart-item">
+        <img src="assets/carrot.jpg" alt="Carrots">
+        <h2>Carrots</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Price: $3.99</p>
+      </div>
+      <!-- Add more cart items here -->
+    </div>
+
+    <div id="checkout-section">
+      <h2>Order Total: $9.98</h2>
+      <button id="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 E-commerce Website. All rights reserved.</p>
+  </footer>
+
+  <!-- Payment gateway integration code -->
+  <script src="payment.js"></script>
+</body>
+</html>
